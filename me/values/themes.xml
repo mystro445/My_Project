@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Sign" parent="Theme.AppCompat.Light">
+        <!-- Define your custom theme attributes here -->
+    </style>
+
+    <style name="Theme.Sign.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <!-- Add any customizations for the NoActionBar theme here -->
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item android:right="5dp" android:top="5dp">
+                <shape>
+                    <corners android:radius="6dp" />
+                    <solid android:color="#D6D6D6" />
+                </shape>
+            </item>
+            <item > <!-- Reduced shadow size -->
+                <shape>
+                    <gradient
+                        android:angle="270"
+                        android:endColor="#00ACF4"
+                        android:startColor="#00ACF4" />
+                    <stroke android:width="1dp" android:color="#00ACF4" />
+                    <corners android:radius="8dp" />
+
+<!--     in padding if he want shadow of btn
+                        android:bottom="2dp"-->
+<!--                    android:left="2dp"-->
+<!--                    android:right="2dp"-->
+<!--                    android:top="2dp"-->
+                    />
+
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="10dp" />
+            <solid android:color="#01ACF1"></solid>
+        </shape>
+    </item>
+
+</selector>

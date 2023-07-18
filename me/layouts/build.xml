@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="873dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:src="@drawable/app_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="177dp"
+                        android:layout_height="59dp"
+                        android:src="@drawable/app_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+                        app:layout_constraintVertical_bias="0.578" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="83dp"
+                        android:layout_height="46dp"
+
+                        android:background="@drawable/bg_switch"
+                        android:padding="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.951"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.141">
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:checked="false"
+
+                            android:textColor="@color/white"
+                            android:thumb="@drawable/thumb_selector"
+                            app:switchMinWidth="20dp"
+                            app:track="@drawable/track_selector" />
+
+                        <LinearLayout
+                            android:layout_width="85dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <!-- Add padding here to separate the thumb from the text -->
+                            <TextView
+                                android:id="@+id/tvSwitchYes"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="4dp"
+                                android:text="EN"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/tvSwitchNo"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="4dp"
+                                android:text="AR"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" /> <!-- Adjust the padding as per your requirement -->
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="35dp">
+
+                            <FrameLayout
+                                android:layout_width="350dp"
+                                android:layout_height="450dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="122dp"
+
+
+                                android:background="@drawable/shadoww_background"
+
+                                android:elevation="4dp"
+                                android:padding="8dp"
+
+                                >
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="440dp"
+                                    android:backgroundTint="#F9F9F9"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="54dp"
+                                        android:layout_marginStart="149dp"
+                                        android:layout_marginTop="22dp"
+                                        android:text="Sign in"
+                                        android:textColor="#606060"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="313dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="11dp"
+                                        android:text="E-mail or registered phone number"
+                                        android:textColor="#a5a5a5"
+                                        android:textSize="11.9sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/editTextTextEmailAddress2"
+                                            android:layout_width="304dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="12dp"
+                                            android:layout_marginTop="8dp"
+                                            android:background="@drawable/roundme"
+                                            android:ems="10"
+                                            android:inputType="textEmailAddress"
+                                            android:textColor="#000000" />
+
+
+                                        <!--error eamil label-->
+
+                                        <ImageView
+                                            android:id="@+id/imageView2"
+                                            android:layout_width="44dp"
+                                            android:layout_height="26dp"
+                                            android:layout_marginStart="265dp"
+                                            android:layout_marginTop="13dp"
+                                            android:src="@drawable/icon_email" />
+
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/errorEmailLabel"
+                                        android:layout_width="313dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="15.7dp"
+                                        android:text="Error enter your correct emai!"
+                                        android:textColor="#FF0000"
+                                        android:textSize="11.9sp"
+                                        android:visibility="gone" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="313dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="11dp"
+                                        android:layout_marginTop="14dp"
+                                        android:text="Password"
+                                        android:textColor="#a5a5a5"
+                                        android:textSize="11.9sp" />
+
+
+                                    <!--                            <EditText-->
+                                    <!--                                android:id="@+id/editTextTextPassword3"-->
+                                    <!--                                android:layout_width="328dp"-->
+                                    <!--                                android:layout_height="61dp"-->
+                                    <!--                                android:layout_marginStart="20dp"-->
+                                    <!--                                android:ems="10"-->
+                                    <!--                                android:inputType="textPassword" />-->
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/editTextTextPassword3"
+                                            android:layout_width="304dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="12dp"
+                                            android:layout_marginTop="8dp"
+                                            android:background="@drawable/roundme"
+                                            android:ems="10"
+                                            android:inputType="textPassword"
+                                            android:textColor="#000000" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView_password"
+                                            android:layout_width="27dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignTop="@id/editTextTextPassword3"
+                                            android:layout_alignEnd="@id/editTextTextPassword3"
+                                            android:layout_alignBottom="@id/editTextTextPassword3"
+                                            android:layout_marginTop="6.5dp"
+                                            android:layout_marginEnd="16dp"
+                                            android:layout_marginBottom="13dp"
+                                            android:src="@drawable/icon_password" />
+
+                                        <ImageView
+                                            android:id="@+id/imageViewme"
+                                            android:layout_width="40dp"
+                                            android:layout_height="19dp"
+                                            android:layout_alignTop="@id/editTextTextPassword3"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="8dp"
+                                            android:layout_toStartOf="@+id/imageView_password"
+                                            android:onClick="togglePasswordVisibility"
+                                            android:src="@drawable/untitled"
+                                            tools:ignore="DuplicateIds" />
+
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/errorPasswordLabel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginStart="15.7dp"
+                                            android:text="Enter your pass correctly."
+                                            android:textColor="#FF0000"
+                                            android:textSize="11.9sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:id="@+id/textView6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="17dp"
+                                            android:text="forgot your password?"
+                                            android:textColor="#549db2"
+                                            android:textSize="13sp" />
+                                    </RelativeLayout>
+                                    <!--                                    android:visibility="visible"-->
+
+
+                                    <Button
+                                        android:id="@+id/btn_login"
+                                        android:layout_width="122dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="106dp"
+                                        android:layout_marginTop="34dip"
+                                        android:background="@drawable/rounded_corner"
+                                        android:elevation="4dp"
+                                        android:onClick="onButtonClick"
+                                        android:text="Log in"
+                                        android:textAllCaps="false"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:id="@+id/textView8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="120dp"
+                                        android:layout_marginTop="16dp"
+                                        android:text="Create an account"
+                                        android:textColor="#549db2"
+                                        android:textSize="12sp" />
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="44dp">
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="467dp"
+                                android:paddingTop="15dp">
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>
+

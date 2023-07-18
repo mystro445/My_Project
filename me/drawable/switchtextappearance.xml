@@ -1,0 +1,8 @@
+<style android:name="CustomSwitchStyle"
+    android:parent="Widget.AppCompat.CompoundButton.Switch"
+    xmlns="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/aapt">
+    <item android:name="android:textColor">@android:color/white</item>
+    <item android:name="android:thumbTextPadding">8dp</item>
+    <item android:name="android:thumbTextSize">14sp</item>
+</style>
