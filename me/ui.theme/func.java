@@ -90,7 +90,7 @@ public class func extends AppCompatActivity {
 
         if (isChecked) {
             sign.setText("تسجيل الدخول");
-            sign.setPadding(0, 0, 203, 0);
+            sign.setPadding(0, 0, 0, 0);
 
             emailLabel.setText("البريد الإلكتروني أو رقم الهاتف المسجل");
             emailLabel.setPadding(0, 0, 30, 0);
@@ -99,14 +99,16 @@ public class func extends AppCompatActivity {
             passwordLabel.setPadding(0, 0, 30, 0);
 
             forgetMe.setText("نسيت كلمة المرور؟");
-            forgetMe.setPadding(0, 0, 666, 0);
+            forgetMe.setPadding(0, 0, 606, 0);
 
             createAccount.setText("إنشاء حساب");
-            createAccount.setPadding(0, 0, 426, 0);
+            createAccount.setPadding(0, 0, 0, 0);
         } else {
             // If the switch is OFF, update the text for English language
             sign.setText("Sign in");
+            sign.setPadding(0,0,0,0);
             emailLabel.setText("E-mail or registered phone number:");
+            emailLabel.setPadding(0,0,0,0);
             passwordLabel.setText("Password");
             forgetMe.setText("forget your password?");
             forgetMe.setPadding(0, 0, 0, 0);
